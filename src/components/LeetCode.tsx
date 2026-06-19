@@ -117,7 +117,7 @@ const LeetCode: React.FC = () => {
             </div>
 
             <div className="view-profile">
-              <a href="https://leetcode.com/kavi_Andata" target="_blank" rel="noopener noreferrer">
+              <a href="https://leetcode.com/u/V_ijaykum_ar" target="_blank" rel="noopener noreferrer">
                 View LeetCode Profile →
               </a>
             </div>
