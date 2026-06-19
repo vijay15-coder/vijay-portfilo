@@ -1,11 +1,11 @@
-import { SplitText } from "gsap-trial/SplitText";
+import { SplitText } from "gsap/SplitText";
 import gsap from "gsap";
 import { smoother } from "../Navbar";
 
 export function initialFX() {
   // Reveal the page and restore scrolling FIRST, before any code that could
   // throw. This guarantees the content is never left hidden if a later
-  // animation (e.g. a gsap-trial plugin) fails.
+  // animation (e.g. a GSAP plugin) fails.
   document.body.style.overflowY = "auto";
   const mainEl = document.getElementsByTagName("main")[0];
   if (mainEl) mainEl.classList.add("main-active");
