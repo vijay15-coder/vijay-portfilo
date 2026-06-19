@@ -1,0 +1,329 @@
+.leetcode-section {
+  min-height: 100vh;
+  background: #0f1419;
+  color: white;
+  padding: 5rem 2rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.leetcode-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leetcode-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.leetcode-header h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #a855f7 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.leetcode-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Profile Card */
+.profile-card {
+  background: rgba(17, 24, 39, 0.8);
+  border: 1px solid rgba(55, 65, 81, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  grid-row: 1 / 3;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.profile-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.profile-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+.username {
+  margin: 0;
+  color: #6ee7b7;
+  font-size: 0.9rem;
+}
+
+.main-stat {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.stat-number {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #a855f7 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f9fafb;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.stat-sublabel {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.difficulty-breakdown {
+  margin-top: 3rem;
+}
+
+.difficulty-item {
+  margin-bottom: 1.5rem;
+}
+
+.difficulty-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.difficulty-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.difficulty-dot.easy {
+  background: #10b981;
+}
+
+.difficulty-dot.medium {
+  background: #f59e0b;
+}
+
+.difficulty-dot.hard {
+  background: #ef4444;
+}
+
+.difficulty-count {
+  margin-left: auto;
+  color: #9ca3af;
+}
+
+.progress-bar {
+  height: 6px;
+  background: rgba(55, 65, 81, 0.5);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 1s ease-out;
+}
+
+.easy-fill {
+  background: linear-gradient(90deg, #10b981, #34d399);
+}
+
+.medium-fill {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+
+.hard-fill {
+  background: linear-gradient(90deg, #ef4444, #f87171);
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: rgba(17, 24, 39, 0.8);
+  border: 1px solid rgba(55, 65, 81, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(167, 85, 247, 0.5);
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #a855f7 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.25rem;
+}
+
+.stat-name {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Topics Card */
+.topics-card {
+  background: rgba(17, 24, 39, 0.8);
+  border: 1px solid rgba(55, 65, 81, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.topics-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.topics-icon {
+  font-size: 1.2rem;
+}
+
+.topics-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.topic-tag {
+  background: rgba(55, 65, 81, 0.5);
+  color: #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(75, 85, 99, 0.3);
+  transition: all 0.3s ease;
+}
+
+.topic-tag:hover {
+  background: rgba(167, 85, 247, 0.2);
+  border-color: rgba(167, 85, 247, 0.5);
+  color: #c4b5fd;
+}
+
+.view-profile {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.view-profile a {
+  color: #a855f7;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.view-profile a:hover {
+  color: #c084fc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .leetcode-section {
+    padding: 3rem 1rem;
+  }
+  
+  .leetcode-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .profile-card {
+    grid-row: auto;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .topics-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+  }
+  
+  .stat-number {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card,
+  .topics-card,
+  .stat-card {
+    padding: 1.25rem;
+  }
+  
+  .topics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

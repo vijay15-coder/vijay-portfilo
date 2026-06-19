@@ -64,6 +64,11 @@ const Navbar = () => {
             </a>
           </li>
           <li>
+            <a data-href=".leetcode-section" href="#leetcode">
+              <HoverLinks text="LEETCODE" />
+            </a>
+          </li>
+          <li>
             <a data-href="#contact" href="#contact">
               <HoverLinks text="CONTACT" />
             </a>
